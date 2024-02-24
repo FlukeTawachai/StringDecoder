@@ -1,0 +1,16 @@
+D:\Learning\StringDecoder\StringDecoder\bin\Debug\netcoreapp3.1\StringDecoder.exe
+D:\Learning\StringDecoder\StringDecoder\bin\Debug\netcoreapp3.1\StringDecoder.deps.json
+D:\Learning\StringDecoder\StringDecoder\bin\Debug\netcoreapp3.1\StringDecoder.runtimeconfig.json
+D:\Learning\StringDecoder\StringDecoder\bin\Debug\netcoreapp3.1\StringDecoder.runtimeconfig.dev.json
+D:\Learning\StringDecoder\StringDecoder\bin\Debug\netcoreapp3.1\StringDecoder.dll
+D:\Learning\StringDecoder\StringDecoder\bin\Debug\netcoreapp3.1\StringDecoder.pdb
+D:\Learning\StringDecoder\StringDecoder\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Learning\StringDecoder\StringDecoder\obj\Debug\netcoreapp3.1\StringDecoder.csproj.AssemblyReference.cache
+D:\Learning\StringDecoder\StringDecoder\obj\Debug\netcoreapp3.1\StringDecoder.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\StringDecoder\StringDecoder\obj\Debug\netcoreapp3.1\StringDecoder.AssemblyInfoInputs.cache
+D:\Learning\StringDecoder\StringDecoder\obj\Debug\netcoreapp3.1\StringDecoder.AssemblyInfo.cs
+D:\Learning\StringDecoder\StringDecoder\obj\Debug\netcoreapp3.1\StringDecoder.csproj.CoreCompileInputs.cache
+D:\Learning\StringDecoder\StringDecoder\obj\Debug\netcoreapp3.1\StringDecoder.csproj.CopyComplete
+D:\Learning\StringDecoder\StringDecoder\obj\Debug\netcoreapp3.1\StringDecoder.dll
+D:\Learning\StringDecoder\StringDecoder\obj\Debug\netcoreapp3.1\StringDecoder.pdb
+D:\Learning\StringDecoder\StringDecoder\obj\Debug\netcoreapp3.1\StringDecoder.genruntimeconfig.cache
