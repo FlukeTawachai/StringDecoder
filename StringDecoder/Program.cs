@@ -31,24 +31,50 @@ class Demo
 
     static DecodeModel decoderText(string text)
     {
-        //if (text.Contains("AAAA"))
-        //{
 
-        //}
         DecodeModel response = new DecodeModel();
         List<string> tempList = new List<string>();
         List<string> finalList = new List<string>();
+        bool checkAaaa = false;
+        if (text.Contains("AAAA") == true)
+        {
+            checkAaaa = true;
+        }
         List<string> textList = stringToList(text);
         for (int i = 0; i < textList.Count(); i++)
         {
             int nextIndex = i + 1;
             string str = textList[i];
             string strNext = "";
+
+            //special string 'AAAA' check
+            if (checkAaaa == true)
+            {
+                int nextIndex2 = i + 2;
+                int nextIndex3 = i + 3;
+                string newStr = "";
+                if (nextIndex3 < textList.Count())
+                {
+                    newStr = str + textList[nextIndex] + textList[nextIndex2] + textList[nextIndex3];
+                    if (newStr == "AAAA")
+                    {
+                        finalList.Add(newStr);
+                        str = "";
+                        textList[nextIndex] = "";
+                        textList[nextIndex2] = "";
+                        textList[nextIndex3] = "";
+                    }
+                }
+
+            }
+
+            //next index check
             if (nextIndex < textList.Count())
             {
                 strNext = textList[nextIndex];
             }
 
+            //special string 'AB','AZ','ZL','ZC','CD','DR' check
             string tempStr = str + strNext;
             if (chexkText(tempStr) == true)
             {
@@ -63,9 +89,19 @@ class Demo
                 finalList.Add(str);
             }
         }
+        //add output array
+        List<string> outList = new List<string>();
+        for (int i = 0; i < finalList.Count(); i++)
+        {
+            if (finalList[i] != "")
+            {
+                outList.Add(finalList[i]);
+            }
+        }
+
         response.SplitBy = "";
         response.Input = textList;
-        response.Output = finalList;
+        response.Output = outList;
         response.Result = tempList;
         return response;
     }
@@ -150,6 +186,9 @@ class Demo
                     break;
                 case "CR":
                     number = 900;
+                    break;
+                case "AAAA":
+                    number = 3;
                     break;
             }
             value += number;
